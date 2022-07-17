@@ -3,7 +3,7 @@ import os
 import re
 
 
-def build_imports_from_style(style_components_string: str, style_file_name="style.jsx") -> str:
+def build_imports_from_style(style_components_string: str, style_file_name="style.jsx"):
     """
     Returns the import string to paste in the jsx file : import { style_component } from './style_file.jsx
                 Parameters:
@@ -22,13 +22,6 @@ def build_imports_from_style(style_components_string: str, style_file_name="styl
             imports += ", "
     imports += f"}} from './{style_file_name}' "
     return imports
-
-
-style_imports = '''
-import styled from 'styled-components'
-import colors from '../../utils/style/colors'
-import { Link } from 'react-router-dom'
-'''
 
 
 def get_subfolders_from_folder(folder: str):
