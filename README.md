@@ -49,7 +49,7 @@ components folder
                       |__ style.jsx
 ```    
 
-Where styled-components are imported in ìndex.jsx`, and `style.jsx`(or any other style file name) has the form : 
+Where styled-components are imported in `index.jsx`, and `style.jsx` (or any other style file name) has the form : 
 
 ```
 import styled from 'styled-components'
